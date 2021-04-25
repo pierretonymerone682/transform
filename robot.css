@@ -1,0 +1,206 @@
+body{
+    background-color: lightblue;
+}
+.head{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 70% 70% 0% 0%;
+    margin-top: 30px;
+    margin-left: 300px;
+    animation: head 3s ease-out infinite;
+}
+
+.head:hover{
+    width: 150px;
+    margin-left: 280px;
+
+    transition: 1s ease-in-out;
+    background-color: cadetblue;
+}
+.eye{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    animation: eye;
+}
+.stomach{
+    width: 150px;
+    height: 200px;
+    background-color: blue;
+    margin-left: 280px;
+    border-radius: 70px 70px 0px 0px;
+    animation: stomach infinite;
+    animation-duration: 3s;
+}
+.foot{
+animation: feet;
+}
+
+
+
+
+
+.left{
+    width: 30px;
+    height: 200px; 
+    background-color: gray;
+    margin-left: 305px;
+    transition: background-color 2s;
+    transition: border-radius 3s;
+}
+.left:hover{
+    
+    width: 60px;
+    background-color: violet;
+    border-radius: 50%;
+
+}
+.right:hover{
+    -webkit-transform: scale(1, 0.5);
+    -moz-transform: scale(1, 0.5);
+    -ms-transform: scale(1, 0.5);
+    -o-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+    transition: 500ms linear;
+}
+.right{
+    width: 30px;
+    height: 200px;
+    background-color: orange;
+    margin-left: 75px;
+    transition: width 2s;
+    
+}
+
+
+
+
+
+
+
+.left-hand{
+    width: 20px;
+    height: 170px;
+    background-color: greenyellow;
+    margin-left: 250px;
+    z-index: 1;
+    animation: moves infinite;
+    animation-duration: 1s;
+}
+.right-hand{
+    width: 20px;
+    height: 170px;
+    background-color: greenyellow;
+    margin-bottom: 100px;
+    margin-left: 190px;
+    animation: move infinite;
+    animation-duration: 1s ;
+
+}
+.right-hand:hover{
+    -webkit-transform: translate(30px);
+    -moz-transform: translate(30px);
+    -ms-transform: translate(30px);
+    -o-transform: translate(30px);
+    transform: translate(30px);
+    transition: 500ms linear;
+}
+@keyframes feett {
+    from{
+        -webkit-transform: scale(1, 0.5);
+        -moz-transform: scale(1, 0.5);
+        -ms-transform: scale(1, 0.5);
+        -o-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        transition: 500ms linear;
+    }
+    to{
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        transition: 500ms linear;
+    }
+}
+
+  @keyframes move{
+   from 
+   { 
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
+    transform: translate(0px);
+    transition: 500ms linear;  
+    }
+    to{
+        -webkit-transform: translate(40px);
+        -moz-transform: translate(40px);
+        -ms-transform: translate(40px);
+        -o-transform: translate(40px);
+        transform: translate(40px);
+        transition: 500ms linear; 
+    }
+  }
+  @keyframes moves{
+    from 
+    { 
+     -webkit-transform: translate(0px);
+     -moz-transform: translate(0px);
+     -ms-transform: translate(0px);
+     -o-transform: translate(0px);
+     transform: translate(0px);
+     transition: 500ms linear;  
+     }
+     to{
+         -webkit-transform: translate(-30px);
+         -moz-transform: translate(-30px);
+         -ms-transform: translate(-30px);
+         -o-transform: translate(-30px);
+         transform: translate(-30px);
+         transition: 500ms linear; 
+     }
+   }
+  @keyframes head {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    65% {
+      transform: translate(0px, 0px) rotate(180deg);
+    }
+    90% {
+      transform: translate(0px, 0px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+  @keyframes stomach {  
+    0%{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: 500ms linear;
+    }
+    100%{
+        -webkit-transform: 0;
+        -moz-transform: 0;
+        -ms-transform: 0;
+        transform: 0;
+        transition: 0;
+    }
+  }
+  @keyframes eye {
+      0%{background-color: turquoise; left: 0px;}
+      50%{ background-color: green; left: 50px;}
+      100%{background-color: white; left: 0; right: 0;}
+  }
